@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tidy Tails | Pet Waste Removal St. Louis</title>
+    <meta name="description" content="Professional pet waste removal for St. Louis families. Weekly service starting at $25. No contracts, satisfaction guaranteed.">
+    <meta name="keywords" content="pet waste removal, pooper scooper, dog poop cleanup, St. Louis, STL, St. Charles">
+    <link rel="canonical" href="https://tidytailsstl.com">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tidy Tails | Pet Waste Removal St. Louis">
+    <meta property="og:description" content="Your yard. Clean. Every week. Professional pet waste removal starting at $25/week.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tidytailsstl.com">
+    
+    <!-- Favicon placeholder -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐕</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --green: #2d5a27;
+            --green-light: #4a7c42;
+            --green-dark: #1e3d1a;
+            --cream: #f8f6f0;
+            --brown: #5c4033;
+            --orange: #e07b39;
+            --white: #ffffff;
+            --gray: #666666;
+            --gray-light: #999999;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background: var(--cream);
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: var(--white);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--green-dark);
+        }
+        
+        .logo-icon {
+            font-size: 32px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .header-cta {
+            background: var(--orange);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, background 0.2s;
+        }
+        
+        .header-cta:hover {
+            background: #c96a2f;
+            transform: scale(1.05);
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--green) 0%, var(--green-light) 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        
+        .hero p {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            max-width: 600px;
+            margin: 0 auto 30px;
+            opacity: 0.95;
+        }
+        
+        .hero-cta {
+            display: inline-block;
+            background: var(--orange);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        /* Pain Points */
+        .pain-section {
+            background: var(--white);
+            padding: 60px 0;
+        }
+        
+        .pain-section h2 {
+            text-align: center;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: var(--green-dark);
+            margin-bottom: 40px;
+        }
+        
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .pain-item {
+            background: var(--cream);
+            padding: 25px;
+            border-radius: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .pain-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+        
+        .pain-text {
+            font-size: 1.05rem;
+            color: var(--brown);
+        }
+        
+        .pain-cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .pain-cta p {
+            font-size: 1.3rem;
+            color: var(--green);
+            font-weight: 600;
+        }
+        
+        /* Pricing */
+        .pricing-section {
+            padding: 80px 0;
+            background: var(--cream);
+        }
+        
+        .pricing-section h2 {
+            text-align: center;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: var(--green-dark);
+            margin-bottom: 15px;
+        }
+        
+        .pricing-subtitle {
+            text-align: center;
+            color: var(--gray);
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+        
+        .price-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 30px 25px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+        
+        .price-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .price-card.featured {
+            border: 3px solid var(--green);
+            position: relative;
+        }
+        
+        .price-card.featured::before {
+            content: "Most Popular";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--green);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .price-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--green-dark);
+            margin-bottom: 10px;
+        }
+        
+        .price-amount {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--green);
+        }
+        
+        .price-period {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+        
+        .price-desc {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .pricing-note {
+            text-align: center;
+            margin-top: 30px;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        /* Why Us */
+        .why-section {
+            background: var(--white);
+            padding: 80px 0;
+        }
+        
+        .why-section h2 {
+            text-align: center;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: var(--green-dark);
+            margin-bottom: 50px;
+        }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+        
+        .why-item {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .why-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .why-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--green-dark);
+            margin-bottom: 10px;
+        }
+        
+        .why-text {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+        
+        /* About */
+        .about-section {
+            background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .about-inner {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .about-section h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: 25px;
+        }
+        
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            opacity: 0.95;
+            margin-bottom: 20px;
+        }
+        
+        .about-signature {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 30px;
+        }
+        
+        /* Service Areas */
+        .areas-section {
+            padding: 60px 0;
+            background: var(--cream);
+        }
+        
+        .areas-section h2 {
+            text-align: center;
+            font-size: clamp(1.6rem, 3.5vw, 2rem);
+            color: var(--green-dark);
+            margin-bottom: 30px;
+        }
+        
+        .areas-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .area-tag {
+            background: var(--white);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            color: var(--green-dark);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        
+        .areas-note {
+            text-align: center;
+            margin-top: 25px;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        /* Contact / CTA */
+        .contact-section {
+            background: var(--white);
+            padding: 80px 0;
+        }
+        
+        .contact-inner {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: var(--green-dark);
+            margin-bottom: 15px;
+        }
+        
+        .contact-subtitle {
+            color: var(--gray);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: var(--green-dark);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 14px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--green);
+        }
+        
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: var(--orange);
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+            margin-top: 10px;
+        }
+        
+        .submit-btn:hover {
+            background: #c96a2f;
+            transform: scale(1.02);
+        }
+        
+        .form-note {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--gray);
+            font-size: 0.85rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--green-dark);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .footer-contact {
+            margin-bottom: 20px;
+        }
+        
+        .footer-contact a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px 15px;
+            opacity: 0.9;
+        }
+        
+        .footer-contact a:hover {
+            opacity: 1;
+        }
+        
+        .footer-copy {
+            opacity: 0.7;
+            font-size: 0.85rem;
+        }
+        
+        /* Mobile */
+        @media (max-width: 600px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .trust-badges {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .pricing-section,
+            .why-section,
+            .about-section,
+            .contact-section {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🐕</span>
+                <span class="logo-text">Tidy Tails</span>
+            </a>
+            <a href="#contact" class="header-cta">Get Free Quote</a>
+        </div>
+    </header>
+    
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your Yard. Clean. Every Week.</h1>
+            <p>Professional pet waste removal for St. Louis families who'd rather spend time with their dog than cleaning up after them.</p>
+            <a href="#contact" class="hero-cta">Get a Free Quote</a>
+            <div class="trust-badges">
+                <span class="trust-badge">✓ No contracts ever</span>
+                <span class="trust-badge">✓ 100% satisfaction guaranteed</span>
+                <span class="trust-badge">✓ Locally owned</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pain Points -->
+    <section class="pain-section">
+        <div class="container">
+            <h2>Sound Familiar?</h2>
+            <div class="pain-grid">
+                <div class="pain-item">
+                    <span class="pain-icon">😬</span>
+                    <span class="pain-text">You step outside barefoot and immediately regret it</span>
+                </div>
+                <div class="pain-item">
+                    <span class="pain-icon">🚫</span>
+                    <span class="pain-text">The kids won't play in the backyard anymore</span>
+                </div>
+                <div class="pain-item">
+                    <span class="pain-icon">📅</span>
+                    <span class="pain-text">You keep saying "I'll get to it this weekend" (you won't)</span>
+                </div>
+                <div class="pain-item">
+                    <span class="pain-icon">😰</span>
+                    <span class="pain-text">Guests are coming and the yard is... not ready</span>
+                </div>
+            </div>
+            <div class="pain-cta">
+                <p>Let us handle it. Starting at $25/week.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <h2>Simple Pricing. No Surprises.</h2>
+            <p class="pricing-subtitle">Choose what works for your schedule</p>
+            <div class="pricing-grid">
+                <div class="price-card featured">
+                    <div class="price-name">Weekly</div>
+                    <div class="price-amount">$25</div>
+                    <div class="price-period">per week</div>
+                    <div class="price-desc">Best for busy families & multiple dogs</div>
+                </div>
+                <div class="price-card">
+                    <div class="price-name">Bi-Weekly</div>
+                    <div class="price-amount">$45</div>
+                    <div class="price-period">per visit</div>
+                    <div class="price-desc">Light waste, smaller yards</div>
+                </div>
+                <div class="price-card">
+                    <div class="price-name">Monthly</div>
+                    <div class="price-amount">$70</div>
+                    <div class="price-period">per month</div>
+                    <div class="price-desc">Single dog, minimal mess</div>
+                </div>
+                <div class="price-card">
+                    <div class="price-name">One-Time</div>
+                    <div class="price-amount">$100</div>
+                    <div class="price-period">deep clean</div>
+                    <div class="price-desc">Moving? Guests? Spring cleanup?</div>
+                </div>
+            </div>
+            <p class="pricing-note">*Standard residential yards with 1-2 dogs. Contact for custom quotes.</p>
+        </div>
+    </section>
+    
+    <!-- Why Us -->
+    <section class="why-section">
+        <div class="container">
+            <h2>Why St. Louis Pet Parents Choose Us</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">🏠</div>
+                    <div class="why-title">Locally Owned</div>
+                    <div class="why-text">Not a franchise. Not a corporation. Just a local guy who knows your neighborhood.</div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🐕</div>
+                    <div class="why-title">Dog People First</div>
+                    <div class="why-text">This isn't just a job — I genuinely love dogs. Your pets are safe with me.</div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">📅</div>
+                    <div class="why-title">Reliable & Consistent</div>
+                    <div class="why-text">Same day, same time, every week. You'll never have to wonder if we're coming.</div>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">💯</div>
+                    <div class="why-title">Satisfaction Guaranteed</div>
+                    <div class="why-text">Not happy? I'll make it right or your service is free. Period.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About -->
+    <section class="about-section">
+        <div class="container about-inner">
+            <h2>Meet TJ — Your Local Dog Guy</h2>
+            <p>I started Tidy Tails because I know what it's like to love your dog but hate the backyard cleanup. Life's busy. The pile-up is real. And nobody wants to spend their weekend tiptoeing through the yard.</p>
+            <p>Every week, I show up on time, clean every corner of your yard, and leave it spotless. No franchise. No random technicians. Just me — the same face, the same quality, every single time.</p>
+            <div class="about-signature">— TJ, Founder of Tidy Tails</div>
+        </div>
+    </section>
+    
+    <!-- Service Areas -->
+    <section class="areas-section">
+        <div class="container">
+            <h2>Serving St. Louis & Surrounding Areas</h2>
+            <div class="areas-list">
+                <span class="area-tag">St. Louis County</span>
+                <span class="area-tag">St. Charles County</span>
+                <span class="area-tag">Ferguson</span>
+                <span class="area-tag">Florissant</span>
+                <span class="area-tag">Maryland Heights</span>
+                <span class="area-tag">St. Ann</span>
+                <span class="area-tag">O'Fallon</span>
+                <span class="area-tag">St. Peters</span>
+            </div>
+            <p class="areas-note">Don't see your area? Just ask — we're always expanding!</p>
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-inner">
+            <h2>Ready to Reclaim Your Backyard?</h2>
+            <p class="contact-subtitle">Get your free quote in under 2 minutes. No contracts, no pressure.</p>
+            
+            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Street address or zip code">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dogs">Number of Dogs</label>
+                        <select id="dogs" name="dogs">
+                            <option value="1">1 dog</option>
+                            <option value="2">2 dogs</option>
+                            <option value="3">3 dogs</option>
+                            <option value="4+">4+ dogs</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service">
+                            <option value="weekly">Weekly ($25/wk)</option>
+                            <option value="biweekly">Bi-Weekly ($45)</option>
+                            <option value="monthly">Monthly ($70)</option>
+                            <option value="onetime">One-Time ($100)</option>
+                            <option value="unsure">Not sure yet</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Anything else we should know?</label>
+                    <textarea id="message" name="message" placeholder="Gate code, yard size, special instructions..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Get My Free Quote →</button>
+                
+                <p class="form-note">We'll get back to you within 24 hours (usually much faster).</p>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">🐕 Tidy Tails</div>
+            <div class="footer-contact">
+                <a href="tel:+1XXXXXXXXXX">📞 Call/Text</a>
+                <a href="mailto:hello@tidytailsstl.com">📧 Email</a>
+            </div>
+            <div class="footer-copy">
+                © 2026 Tidy Tails. St. Louis's Favorite Pooper Scooper.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
