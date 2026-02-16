@@ -26,7 +26,7 @@
     <meta name="geo.placename" content="St. Louis">
     
     <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐕</text></svg>">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
     
     <!-- Structured Data - Local Business -->
     <script type="application/ld+json">
@@ -238,7 +238,10 @@
         }
         
         .logo-icon {
-            font-size: 28px;
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 6px;
         }
         
         .logo-text {
@@ -828,6 +831,17 @@
             font-size: 1.4rem;
             font-weight: 700;
             margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .footer-logo img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            border-radius: 8px;
         }
         
         .footer-contact {
@@ -927,7 +941,7 @@
     <header>
         <div class="container header-inner">
             <a href="/" class="logo">
-                <span class="logo-icon">🐕</span>
+                <img src="logo.jpg" alt="Tidy Tails Logo" class="logo-icon">
                 <span class="logo-text">Tidy Tails</span>
             </a>
             <div class="header-right">
@@ -1209,7 +1223,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-logo">🐕 Tidy Tails STL</div>
+            <div class="footer-logo"><img src="logo.jpg" alt="Tidy Tails"> Tidy Tails STL</div>
             <div class="footer-contact">
                 <a href="tel:+13148507140">📞 (314) 850-7140</a>
                 <a href="mailto:hello@tidytailsstl.com">📧 hello@tidytailsstl.com</a>
